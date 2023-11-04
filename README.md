@@ -4,7 +4,7 @@ The idea here is to make as fully functioning of a tic-tac-toe game as possible 
 
 ### So how does it work?
 
-The first 4 lines of code are unfortunately just going to be Java boilerplate (unless switching to a newer version of Java), which creates our `class`, `main`, and `Scanner` object. This `Scanner` makes up `50%` of the variables, but we don't need to go into detail on why we need it for a CLI tic-tac-toe game. Technically it is not needed, as mentioned in the intro.
+The first 3 lines of code are unfortunately just going to be Java boilerplate (unless switching to a newer version of Java), which creates our `class`, `main`, and `Scanner` object. This `Scanner` makes up `50%` of the variables, but we don't need to go into detail on why we need it for a CLI tic-tac-toe game. Technically it is not needed, as mentioned in the intro.
 
 The second variable, `int game` handles all the game data. This single variable controls the dataflow and manages the game state. This is because it is a bitmask.
 
