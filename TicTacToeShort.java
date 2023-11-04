@@ -1,8 +1,7 @@
-import java.util.Scanner;
 public class TicTacToeShort {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int game = 0b1_00_00_00_00_00_00_00_00_00;
+        java.util.Scanner in = new java.util.Scanner(System.in);
+        int game = 262144;
         while ((game & -1073741824) == 0) {
             System.out.println((((game & 536870912) != 0 && (game ^= 536870912) != 536870912) ? "Invalid!\n" : "") +  "Player " + ((game & 262144) == 0 ? 2 : 1) + " , Enter position (1-9) ");
             if ((((game = ((game & 524287) | (((Integer.parseInt(in.nextLine()) - 1) << 22) >>> 3))) >>> 19) <= 8 && (game & (3 << ((game >>> 19) * 2))) == 0) || ((game |= 536870912) == 0)) {
